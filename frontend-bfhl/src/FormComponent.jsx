@@ -28,7 +28,7 @@ const FormComponent = () => {
             setErrorMessage('');
 
             // Make a POST request to the backend API
-            const apiResponse = await axios.post('http://localhost:5000/bfhl', parsedData);
+            const apiResponse = await axios.post('https://test-api-backend-2nmc.vercel.app/bfhl', parsedData);
             setResponse(apiResponse.data);
         } catch (error) {
             setErrorMessage('Invalid JSON format or API error');
